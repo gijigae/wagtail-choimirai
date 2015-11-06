@@ -732,15 +732,15 @@ class WorkPage(Page):
 
 WorkPage.content_panels = [
     FieldPanel('title', classname="full title"),
-    InlinePanel(BlogPage, 'related_author', label="Author"),
+    InlinePanel('related_author', label="Author"),
     FieldPanel('author_left'),
     FieldPanel('summary'),
     FieldPanel('intro', classname="full"),
     FieldPanel('body', classname="full"),
     StreamFieldPanel('streamfield'),
     ImageChooserPanel('homepage_image'),
-    InlinePanel(WorkPage, 'screenshots', label="Screenshots"),
-    InlinePanel(BlogPage, 'tags', label="Tags"),
+    InlinePanel('screenshots', label="Screenshots"),
+    InlinePanel('tags', label="Tags"),
 ]
 
 WorkPage.promote_panels = [

@@ -6,3 +6,4 @@
 /Vagrantfile.local
 db_dump.sql
 .idea/
+.DS_Store

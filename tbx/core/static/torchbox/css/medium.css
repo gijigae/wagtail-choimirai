@@ -78,7 +78,7 @@
     .logo {
         height: 7em;
         padding: 1em 0;
-        background-size: auto 3em;
+        background-size: auto 4em;
         margin: 0;
     }
 
@@ -260,7 +260,7 @@
     }
 
     .page-homepage .logo {
-        background: url("../images/logo-torchbox-white.png") center left no-repeat;
+        background: url("../images/logo-choimirai-eng.png") center left no-repeat;
         background-size: auto 3em;
     }
 
@@ -460,7 +460,7 @@
     }
 
     .page-standardpage .logo {
-        background: url("../images/logo-torchbox-white.png") center left no-repeat;
+        background: url("../images/logo-choimirai-eng.png") center left no-repeat;
         background-size: auto 3em;
     }
 
@@ -728,7 +728,7 @@
     }
 
     .page-blogindexpage .logo {
-        background-image: url("../images/logo-torchbox-white.png");
+        background-image: url("../images/logo-choimirai-jpn.png");
     }
 
     .page-blogindexpage li img {
@@ -818,7 +818,7 @@
 
     .page-blogindexpage .crop-height {
         display: block;
-        max-height: 35em;
+        max-height: 15em;
         overflow: hidden;
         margin-top: -7em;
         position: relative;
@@ -846,7 +846,7 @@
     }
 
     .page-workpage .logo {
-        background-image: url("../images/logo-torchbox-white.png");
+        background-image: url("../images/logo-choimirai-eng.png");
     }
 
     .page-workpage .intro h1 {
@@ -1071,7 +1071,7 @@
     }
 
     .page-jobindexpage .logo {
-        background: url("../images/logo-torchbox-grey.png") center left no-repeat;
+        background: url("../images/logo-choimirai-eng.png") center left no-repeat;
         background-size: auto 3em;
     }
 
@@ -1354,7 +1354,7 @@
     }
 
     .page-tshirtpage .logo {
-        background: url("../images/logo-torchbox-white.png") center left no-repeat;
+        background: url("../images/logo-choimirai-eng.png") center left no-repeat;
         background-size: auto 3em ;
     }
 
