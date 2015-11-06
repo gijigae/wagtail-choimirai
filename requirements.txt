@@ -1,16 +1,16 @@
-Django==1.7.4
-psycopg2==2.5.4
-wagtail==1.0rc2
-Pillow==2.7.0
-django-libsass==0.2
+Django
+psycopg2
+wagtail
+Pillow
+django-libsass
 
 # Development requirements
-django-debug-toolbar==1.2.2
-Fabric==1.10.1
+django-debug-toolbar
+Fabric
 
 # Production requirements
-django-redis==3.8.2
-elasticsearch==1.3.0
-embedly==0.5.0
-redis==2.10.3
-requests==2.7.0
+django-redis
+elasticsearch
+embedly
+redis
+requests

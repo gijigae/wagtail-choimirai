@@ -8,8 +8,7 @@ DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Dave Cranwell', 'david@torchbox.com'),
-    ('Wes West', 'wes@torchbox.com'),
+    ('Sangmin Ahn', 'sangmin@choimirai.com'),
 )
 
 MANAGERS = ADMINS
@@ -162,7 +161,7 @@ INSTALLED_APPS = (
     'tbx.core',
 )
 
-EMAIL_SUBJECT_PREFIX = '[wagtail-torchbox] '
+EMAIL_SUBJECT_PREFIX = '[choimirai] '
 
 INTERNAL_IPS = ('127.0.0.1', '10.0.2.2')
 
@@ -209,7 +208,7 @@ LOGGING = {
 
 # WAGTAIL SETTINGS
 
-WAGTAIL_SITE_NAME = 'torchbox.com'
+WAGTAIL_SITE_NAME = 'choimirai.com'
 
 # Override the search results template for wagtailsearch
 WAGTAILSEARCH_RESULTS_TEMPLATE = 'torchbox/search_results.html'
