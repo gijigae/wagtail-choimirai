@@ -370,9 +370,9 @@ StandardPage.content_panels = [
     FieldPanel('body', classname="full"),
     StreamFieldPanel('streamfield'),
     FieldPanel('email', classname="full"),
-    InlinePanel(StandardPage, 'content_block', label="Content block"),
-    InlinePanel(StandardPage, 'related_links', label="Related links"),
-    InlinePanel(StandardPage, 'clients', label="Clients"),
+    InlinePanel('content_block', label="Content block"),
+    InlinePanel('related_links', label="Related links"),
+    InlinePanel('clients', label="Clients"),
 ]
 
 StandardPage.promote_panels = [
@@ -411,8 +411,8 @@ ServicesPage.content_panels = [
     FieldPanel('title', classname="full title"),
     FieldPanel('intro', classname="full"),
     FieldPanel('body', classname="full"),
-    InlinePanel(ServicesPage, 'content_block', label="Content block"),
-    InlinePanel(ServicesPage, 'related_links', label="Related links"),
+    InlinePanel('content_block', label="Content block"),
+    InlinePanel('related_links', label="Related links"),
 ]
 
 ServicesPage.promote_panels = [
@@ -493,7 +493,7 @@ class BlogIndexPage(Page):
 BlogIndexPage.content_panels = [
     FieldPanel('title', classname="full title"),
     FieldPanel('intro', classname="full"),
-    InlinePanel(BlogIndexPage, 'related_links', label="Related links"),
+    InlinePanel('related_links', label="Related links"),
 ]
 
 BlogIndexPage.promote_panels = [
@@ -577,14 +577,14 @@ class BlogPage(Page):
 
 BlogPage.content_panels = [
     FieldPanel('title', classname="full title"),
-    InlinePanel(BlogPage, 'related_author', label="Author"),
+    InlinePanel('related_author', label="Author"),
     FieldPanel('author_left'),
     FieldPanel('date'),
     FieldPanel('intro', classname="full"),
     FieldPanel('body', classname="full"),
     StreamFieldPanel('streamfield'),
-    InlinePanel(BlogPage, 'related_links', label="Related links"),
-    InlinePanel(BlogPage, 'tags', label="Tags")
+    InlinePanel('related_links', label="Related links"),
+    InlinePanel('tags', label="Tags")
 ]
 
 BlogPage.promote_panels = [
@@ -645,8 +645,8 @@ class JobIndexPage(Page):
 JobIndexPage.content_panels = [
     FieldPanel('title', classname="full title"),
     FieldPanel('intro', classname="full"),
-    InlinePanel(JobIndexPage, 'content_block', label="Content block"),
-    InlinePanel(JobIndexPage, 'job', label="Job"),
+    InlinePanel('content_block', label="Content block"),
+    InlinePanel('job', label="Job"),
 ]
 
 JobIndexPage.promote_panels = [
@@ -849,7 +849,7 @@ PersonPage.content_panels = [
     FieldPanel('biography', classname="full"),
     ImageChooserPanel('image'),
     MultiFieldPanel(ContactFields.panels, "Contact"),
-    InlinePanel(PersonPage, 'related_links', label="Related links"),
+    InlinePanel('related_links', label="Related links"),
 ]
 
 PersonPage.promote_panels = [
