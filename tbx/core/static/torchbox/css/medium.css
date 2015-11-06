@@ -259,9 +259,10 @@
         color: #ea853a;
     }
 
+    /* It controls the log of the Home page. */
     .page-homepage .logo {
-        background: url("../images/logo-choimirai-eng.png") center left no-repeat;
-        background-size: auto 3em;
+        background: url("../images/logo-choimirai-jpn.png") center left no-repeat;
+        background-size: auto 4em;
     }
 
     .page-homepage header {
