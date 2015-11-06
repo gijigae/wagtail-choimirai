@@ -348,7 +348,7 @@ class Migration(migrations.Migration):
                 ('file', models.ImageField(height_field='height', upload_to=wagtail.wagtailimages.models.get_upload_to, width_field='width', verbose_name='File')),
                 ('width', models.IntegerField(editable=False)),
                 ('height', models.IntegerField(editable=False)),
-                ('file_size', models.IntegerField(editable=False)),
+                ('file_size', models.IntegerField(editable=False,  null=True, blank=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('focal_point_x', models.PositiveIntegerField(null=True, blank=True)),
                 ('focal_point_y', models.PositiveIntegerField(null=True, blank=True)),
