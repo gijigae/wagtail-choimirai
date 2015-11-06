@@ -112,11 +112,12 @@ def play_filter(pages, number=0):
 
 
 # https://docs.python.org/2/library/itertools.html#recipes
+# https://docs.python.org/3/library/itertools.html#recipes
 def roundrobin(*iterables):
     "roundrobin('ABC', 'D', 'EF') --> A D E B F C"
     # Recipe credited to George Sakkis
     pending = len(iterables)
-    nexts = cycle(iter(it).next for it in iterables)
+    nexts = cycle(iter(it).__next__ for it in iterables)
     while pending:
         try:
             for next in nexts:

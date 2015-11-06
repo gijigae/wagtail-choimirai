@@ -45,7 +45,8 @@ if settings.DEBUG:
     urlpatterns += staticfiles_urlpatterns()  # tell gunicorn where static files are in dev mode
     urlpatterns += static(settings.MEDIA_URL + 'images/', document_root=os.path.join(settings.MEDIA_ROOT, 'images'))
     urlpatterns += patterns('',
-        (r'^favicon\.ico$', RedirectView.as_view(url=settings.STATIC_URL + 'torchbox.com/images/favicon.ico'))
+        (r'^favicon\.ico$', RedirectView.as_view(url=settings.STATIC_URL + 'torchbox.com/images/favicon.ico',
+                                                 permanent=False))
     )
 
 handler404 = 'tbx.core.views.error404'
