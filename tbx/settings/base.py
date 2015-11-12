@@ -157,6 +157,8 @@ INSTALLED_APPS = (
     'wagtail.wagtailembeds',
     'wagtail.wagtailsearch',
     'wagtail.wagtailredirects',
+    'wagtail.wagtailsites',
+    'wagtail.contrib.wagtailstyleguide',
 
     'tbx.core',
 )
