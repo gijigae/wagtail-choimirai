@@ -16,10 +16,10 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'torchbox',
+        'NAME': 'choimirai-db',
         'USER': '',
         'PASSWORD': '',
-        'HOST': '',  # Set to empty string for localhost.
+        'HOST': 'localhost',  # Set to empty string for localhost.
         'PORT': '',  # Set to empty string for default.
     }
 }
