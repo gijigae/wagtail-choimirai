@@ -2,6 +2,15 @@ from .base import *
 
 DEBUG = False
 
+# Parse database configuration from $DATABASE_URL
+import dj_database_url
+DATABASES['default'] =  dj_database_url.config()
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Allow all host headers
+ALLOWED_HOSTS = ['*']
 
 WAGTAILSEARCH_BACKENDS = {
     'default': {
@@ -38,7 +47,7 @@ SERVER_EMAIL = "root@by-web-2.torchbox.com"
 
 
 # Facebook JSSDK app Id
-FB_APP_ID = '323944607389'
+FB_APP_ID = '1687713411443460'
 
 
 try:
