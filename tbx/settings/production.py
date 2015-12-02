@@ -42,6 +42,7 @@ COMPRESS_CSS_FILTERS = [
     'compressor.filters.cssmin.CSSMinFilter',
 ]
 
+COMPRESS_ENABLED = True
 
 SERVER_EMAIL = "root@by-web-2.torchbox.com"
 
