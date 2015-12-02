@@ -19,7 +19,7 @@ DATABASES = {
         'NAME': 'choimirai-db',
         'USER': '',
         'PASSWORD': '',
-        'HOST': '127.0.0.1',  # Set to empty string for localhost.
+        'HOST': '',  # Set to empty string for localhost.
         'PORT': '',  # Set to empty string for default.
     }
 }
