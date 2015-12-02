@@ -172,7 +172,8 @@ COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'django_libsass.SassCompiler'),
 )
 
-COMPRESS_OFFLINE = True
+#COMPRESS_OFFLINE = True
+COMPRESS_ENABLED = True
 
 # Auth settings
 LOGIN_URL = 'django.contrib.auth.views.login'
