@@ -1,6 +1,7 @@
 # Django settings for wagtail-torchbox project.
 
 import os
+import dj_database_url
 
 PROJECT_ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 
@@ -23,6 +24,10 @@ DATABASES = {
         'PORT': '',  # Set to empty string for default.
     }
 }
+
+
+# Parse database configuration from $DATABASE_URL
+DATABASES['default'] =  dj_database_url.config()
 
 CONN_MAX_AGE = 600  # number of seconds database connections should persist for
 
