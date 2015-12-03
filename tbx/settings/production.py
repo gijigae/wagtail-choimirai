@@ -30,7 +30,7 @@ INSTALLED_APPS += (
     'wagtail.contrib.wagtailfrontendcache',
 )
 
-redis_url = urlparse.urlparse(os.environ.get('REDISCLOUD_URL'))
+redis_url = urlparse(os.environ.get('REDISCLOUD_URL'))
 CACHES = {
     'default': {
         'BACKEND': 'redis_cache.RedisCache',
