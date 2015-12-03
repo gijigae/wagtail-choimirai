@@ -42,18 +42,6 @@ redis_url = urlparse(os.environ.get('REDISCLOUD_URL'))
 #     }
 # }
 
-
-COMPRESS_CSS_FILTERS = [
-    'compressor.filters.css_default.CssAbsoluteFilter',
-    'compressor.filters.cssmin.CSSMinFilter',
-]
-
-SERVER_EMAIL = "root@by-web-2.torchbox.com"
-
-
-# Facebook JSSDK app Id
-FB_APP_ID = '1687713411443460'
-
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 COMPRESS_OFFLINE = True
@@ -63,6 +51,11 @@ COMPRESS_CSS_FILTERS = [
 ]
 COMPRESS_CSS_HASHING_METHOD = 'content'
 
+SERVER_EMAIL = "root@by-web-2.torchbox.com"
+
+
+# Facebook JSSDK app Id
+FB_APP_ID = '1687713411443460'
 
 try:
     from .local import *
