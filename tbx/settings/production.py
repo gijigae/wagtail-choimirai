@@ -1,5 +1,7 @@
 from .base import *
+from urllib.parse import urlparse
 import os
+
 
 env = os.environ.copy()
 SECRET_KEY = env['SECRET_KEY']
@@ -28,11 +30,11 @@ INSTALLED_APPS += (
     'wagtail.contrib.wagtailfrontendcache',
 )
 
-
+redis_url = urlparse.urlparse(os.environ.get('REDISCLOUD_URL'))
 CACHES = {
     'default': {
-        'BACKEND': 'redis_cache.cache.RedisCache',
-        'LOCATION': 'localhost:6379',
+        'BACKEND': 'redis_cache.RedisCache',
+        'LOCATION': '%s:%s' % (redis_url.hostname, redis_url.port),
         'KEY_PREFIX': 'torchbox',
         'OPTIONS': {
             'CLIENT_CLASS': 'redis_cache.client.DefaultClient',
