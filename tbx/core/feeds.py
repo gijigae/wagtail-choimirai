@@ -8,7 +8,7 @@ from tbx.core.utils import play_filter
 # Main blog feed
 
 class BlogFeed(Feed):
-    title = "The Torchbox Blog"
+    title = "The Choimirai Blog"
     link = "/blog/"
     description = "The latest news and views from Torchbox on the work we do, the web and the wider world"
 
