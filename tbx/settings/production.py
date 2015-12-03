@@ -53,6 +53,12 @@ COMPRESS_CSS_HASHING_METHOD = 'content'
 
 SERVER_EMAIL = "root@by-web-2.torchbox.com"
 
+AWS_QUERYSTRING_AUTH = False
+AWS_ACCESS_KEY_ID = env['AWS_ACCESS_KEY_ID']
+AWS_SECRET_ACCESS_KEY = env['AWS_SECRET_ACCESS_KEY']
+AWS_STORAGE_BUCKET_NAME = env['S3_BUCKET_NAME']
+MEDIA_URL = 'http://%s.s3-website-ap-northeast-1.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+DEFAULT_FILE_STORAGE = "storages.backends.s3boto.S3BotoStorage"
 
 # Facebook JSSDK app Id
 FB_APP_ID = '1687713411443460'

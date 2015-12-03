@@ -151,6 +151,7 @@ INSTALLED_APPS = (
     'compressor',
     'taggit',
     'modelcluster',
+    'storages',
     'django.contrib.admin',
 
     'wagtail.wagtailcore',
