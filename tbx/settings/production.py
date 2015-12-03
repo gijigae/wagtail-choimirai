@@ -42,7 +42,7 @@ redis_url = urlparse(os.environ.get('REDISCLOUD_URL'))
 #     }
 # }
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 COMPRESS_OFFLINE = True
 COMPRESS_CSS_FILTERS = [
