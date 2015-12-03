@@ -14,7 +14,7 @@ def export_event(event, format='ical'):
     ical_components = [
         'BEGIN:VCALENDAR',
         'VERSION:2.0',
-        'PRODID:-//Torchbox//wagtail//EN',
+        'PRODID:-//Choimirai//wagtail//EN',
     ]
 
     # Work out number of days the event lasts
