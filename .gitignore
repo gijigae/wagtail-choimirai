@@ -1,8 +1,6 @@
 /.vagrant
 /tbx/settings/local.py
-/static
 *.pyc
-/media
 /Vagrantfile.local
 db_dump.sql
 .idea/
