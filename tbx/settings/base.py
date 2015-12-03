@@ -224,7 +224,7 @@ WAGTAILSEARCH_RESULTS_TEMPLATE = 'torchbox/search_results.html'
 WAGTAIL_USAGE_COUNT_ENABLED = True
 
 # Override the Image class used by wagtailimages with a custom one
-#WAGTAILIMAGES_IMAGE_MODEL = 'torchbox.TorchboxImage'
+WAGTAILIMAGES_IMAGE_MODEL = 'torchbox.TorchboxImage'
 
 # Facebook JSSDK app Id
 # FB_APP_ID = ''
