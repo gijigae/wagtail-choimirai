@@ -31,16 +31,16 @@ INSTALLED_APPS += (
 )
 
 redis_url = urlparse(os.environ.get('REDISCLOUD_URL'))
-CACHES = {
-    'default': {
-        'BACKEND': 'redis_cache.RedisCache',
-        'LOCATION': '%s:%s' % (redis_url.hostname, redis_url.port),
-        'KEY_PREFIX': 'torchbox',
-        'OPTIONS': {
-            'CLIENT_CLASS': 'redis_cache.client.DefaultClient',
-        }
-    }
-}
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'redis_cache.RedisCache',
+#         'LOCATION': '%s:%s' % (redis_url.hostname, redis_url.port),
+#         'KEY_PREFIX': 'torchbox',
+#         'OPTIONS': {
+#             'CLIENT_CLASS': 'redis_cache.client.DefaultClient',
+#         }
+#     }
+# }
 
 
 COMPRESS_CSS_FILTERS = [
