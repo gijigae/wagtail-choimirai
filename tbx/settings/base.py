@@ -17,6 +17,8 @@ def get_env_variable(var_name):
 PROJECT_ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+SECRET_KEY = get_env_variable("SECRET_KEY")
+
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
