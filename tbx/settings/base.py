@@ -26,16 +26,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'choimirai-db',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',  # Set to empty string for localhost.
-        'PORT': '',  # Set to empty string for default.
-    }
-}
+
 
 
 # Parse database configuration from $DATABASE_URL
@@ -135,6 +126,7 @@ MIDDLEWARE_CLASSES = (
 )
 
 from django.conf import global_settings
+
 TEMPLATE_CONTEXT_PROCESSORS = global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
     'django.core.context_processors.request',
     'tbx.core.context_processors.fb_app_id',
