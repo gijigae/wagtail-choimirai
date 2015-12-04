@@ -8,5 +8,3 @@ db_dump.sql
 .env
 /venv/
 *.swp
-/static
-/media
