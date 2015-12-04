@@ -28,8 +28,18 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'choimirai-db',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',  # Set to empty string for localhost.
+        'PORT': '',  # Set to empty string for default.
+    }
+}
 # Parse database configuration from $DATABASE_URL
-# DATABASES['default'] =  dj_database_url.config()
+DATABASES['default'] =  dj_database_url.config()
 
 CONN_MAX_AGE = 600  # number of seconds database connections should persist for
 
