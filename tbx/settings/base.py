@@ -82,7 +82,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -100,7 +100,7 @@ STATICFILES_FINDERS = (
     'compressor.finders.CompressorFinder',
 )
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 # Make this unique, and don't share it with anybody.
@@ -155,7 +155,7 @@ INSTALLED_APPS = (
     'compressor',
     'taggit',
     'modelcluster',
-    # 'storages',
+    'storages',
     'django.contrib.admin',
 
     'wagtail.wagtailcore',
@@ -182,7 +182,7 @@ COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'django_libsass.SassCompiler'),
 )
 
-COMPRESS_OFFLINE = True
+# COMPRESS_OFFLINE = True
 COMPRESS_ENABLED = True
 
 # Auth settings
@@ -231,6 +231,18 @@ WAGTAIL_USAGE_COUNT_ENABLED = True
 # Override the Image class used by wagtailimages with a custom one
 WAGTAILIMAGES_IMAGE_MODEL = 'torchbox.TorchboxImage'
 
+AWS_HEADERS = {  # see http://developer.yahoo.com/performance/rules.html#expires
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'Cache-Control': 'max-age=94608000',
+    }
+
+# env = os.environ.copy()
+# AWS_STORAGE_BUCKET_NAME = 'choimirai-media'
+# AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+# STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
+# STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+# MEDIA_URL = 'http://%s.s3-website-ap-northeast-1.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+# DEFAULT_FILE_STORAGE = "storages.backends.s3boto.S3BotoStorage"
 
 # Facebook JSSDK app Id
 # FB_APP_ID = ''
