@@ -237,10 +237,10 @@ AWS_HEADERS = {  # see http://developer.yahoo.com/performance/rules.html#expires
     }
 
 # env = os.environ.copy()
-# AWS_STORAGE_BUCKET_NAME = 'choimirai-media'
-# AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-# STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
-# STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+AWS_STORAGE_BUCKET_NAME = 'choimirai-media'
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
+STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 # MEDIA_URL = 'http://%s.s3-website-ap-northeast-1.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 # DEFAULT_FILE_STORAGE = "storages.backends.s3boto.S3BotoStorage"
 
