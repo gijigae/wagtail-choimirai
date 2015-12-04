@@ -3,7 +3,7 @@ from urllib.parse import urlparse
 import os
 
 
-env = os.environ.copy()
+# env = os.environ.copy()
 SECRET_KEY = os.environ['SECRET_KEY']
 
 DEBUG = False
