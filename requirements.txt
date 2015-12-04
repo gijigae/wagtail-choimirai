@@ -37,7 +37,6 @@ paramiko==1.16.0
 Pillow==3.0.0
 psycopg2==2.6.1
 pycrypto==2.6.1
-python-ldap==2.4.22
 pytz==2015.7
 redis==2.10.5
 requests==2.8.1
