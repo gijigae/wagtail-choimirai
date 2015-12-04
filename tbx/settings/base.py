@@ -26,9 +26,6 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-
-
-
 # Parse database configuration from $DATABASE_URL
 # DATABASES['default'] =  dj_database_url.config()
 
@@ -182,7 +179,7 @@ COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'django_libsass.SassCompiler'),
 )
 
-# COMPRESS_OFFLINE = True
+COMPRESS_OFFLINE = True
 COMPRESS_ENABLED = True
 
 # Auth settings
