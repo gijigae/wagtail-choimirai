@@ -10,3 +10,4 @@ db_dump.sql
 *.swp
 /static
 /media
+/tbx/core/static/torchbox/images/.DS_Store
