@@ -259,6 +259,10 @@ MEDIAFILES_LOCATION = 'media'
 MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
+#Mailchimp
+MAILCHIMP_KEY = get_env_variable("MAILCHIMP_KEY")
+MAILING_LIST_ID = get_env_variable("MAILING_LIST_ID")
+
 # Facebook JSSDK app Id
 # FB_APP_ID = ''
 
