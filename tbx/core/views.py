@@ -3,8 +3,6 @@ import requests
 from django.conf import settings
 from django.shortcuts import render
 from django.http import HttpResponse
-#import json
-
 
 def error404(request):
     if '/play/' in request.path:
@@ -16,10 +14,9 @@ def error404(request):
 def newsletter_subsribe(request):
     if request.is_ajax() and request.GET.get('email'):
         requests.post(
-            "https://us3.api.mailchimp.com/3.0/lists/3d650ffa14/members",
-            auth=('apikey', settings.MAILCHIMP_KEY),
-            json={
-                  #'id': settings.MAILING_LIST_ID,
-                  'data':{'email_address': request.GET.get('email')}}
+            "https://us3.api.mailchimp.com/2.0/lists/subscribe",
+            json={'apikey': settings.MAILCHIMP_KEY,
+                  'id': settings.MAILING_LIST_ID,
+                  'email': {'email': request.GET.get('email')}}
         )
     return HttpResponse()
