@@ -239,7 +239,7 @@ class Advert(models.Model):
         FieldPanel('text'),
     ]
 
-    def __unicode__(self):
+    def __str__(self):
         return self.text
 
 register_snippet(Advert)
@@ -513,7 +513,7 @@ class BlogPageTagList(models.Model):
     name = models.CharField(max_length=255)
     slug = models.CharField(max_length=255)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
@@ -547,7 +547,7 @@ class BlogPage(Page):
     intro = RichTextField("Intro (used only for blog index listing)", blank=True)
     body = RichTextField("body (deprecated. Use streamfield instead)", blank=True)
     streamfield = StreamField(StoryBlock())
-    author_left = models.CharField(max_length=255, blank=True, help_text='author who has left Torchbox')
+    author_left = models.CharField(max_length=255, blank=True, help_text='author who has left Choimirai')
     date = models.DateField("Post date")
     feed_image = models.ForeignKey(
         'torchbox.TorchboxImage',
@@ -699,7 +699,7 @@ class WorkPageAuthor(Orderable):
 
 
 class WorkPage(Page):
-    author_left = models.CharField(max_length=255, blank=True, help_text='author who has left Torchbox')
+    author_left = models.CharField(max_length=255, blank=True, help_text='author who has left Choimirai')
     summary = models.CharField(max_length=255)
     intro = RichTextField("Intro (deprecated. Use streamfield instead)", blank=True)
     body = RichTextField("Body (deprecated. Use streamfield instead)", blank=True)

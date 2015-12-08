@@ -39,7 +39,7 @@ DATABASES = {
     }
 }
 # Parse database configuration from $DATABASE_URL
-DATABASES['default'] =  dj_database_url.config()
+# DATABASES['default'] =  dj_database_url.config()
 
 CONN_MAX_AGE = 600  # number of seconds database connections should persist for
 
@@ -165,6 +165,7 @@ INSTALLED_APPS = (
     'taggit',
     'modelcluster',
     'storages',
+    'disqus',
     'django.contrib.admin',
 
     'wagtail.wagtailcore',
@@ -241,6 +242,15 @@ WAGTAIL_USAGE_COUNT_ENABLED = True
 WAGTAILIMAGES_IMAGE_MODEL = 'torchbox.TorchboxImage'
 
 STATICFILES_LOCATION = 'static'
+# STATIC_URL = '/static/'
+#
+MEDIAFILES_LOCATION = 'media'
+# MEDIA_URL = '/media/'
+
+DISQUS_API_KEY = get_env_variable("DISQUS_API_KEY")
+DISQUS_WEBSITE_SHORTNAME = get_env_variable("DISQUS_WEBSITE_SHORTNAME")
+
+# AWS related settings
 AWS_HEADERS = {  # see http://developer.yahoo.com/performance/rules.html#expires
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'Cache-Control': 'max-age=94608000',
@@ -258,6 +268,7 @@ STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
 MEDIAFILES_LOCATION = 'media'
 MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+# AWS related settings
 
 #Mailchimp
 MAILCHIMP_KEY = get_env_variable("MAILCHIMP_KEY")

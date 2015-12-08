@@ -10,7 +10,7 @@ from tbx.core.utils import play_filter
 class BlogFeed(Feed):
     title = "The Choimirai Blog"
     link = "/blog/"
-    description = "The latest news and views from Torchbox on the work we do, the web and the wider world"
+    description = "The latest news and views from Choimirai on the work we do, the web and the wider world"
 
     def items(self):
         return play_filter(BlogPage.objects.live().order_by('-date'), 10)
