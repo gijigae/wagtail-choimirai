@@ -39,7 +39,7 @@ DATABASES = {
     }
 }
 # Parse database configuration from $DATABASE_URL
-# DATABASES['default'] =  dj_database_url.config()
+DATABASES['default'] =  dj_database_url.config()
 
 CONN_MAX_AGE = 600  # number of seconds database connections should persist for
 
