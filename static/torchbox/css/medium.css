@@ -261,7 +261,7 @@
 
     /* It controls the log of the Home page. */
     .page-homepage .logo {
-        background: url("../images/the-school-of-choimirai-logo-red-v3.png") center left no-repeat;
+        background: url("../images/choimirai-logo-tree-and-name.png") center left no-repeat;
         background-size: auto 4em;
     }
 
@@ -461,7 +461,7 @@
     }
 
     .page-standardpage .logo {
-        background: url("../images/the-school-of-choimirai-logo-red-v3.png") center left no-repeat;
+        background: url("../images/choimirai-logo-tree-and-name.png") center left no-repeat;
         background-size: auto 3em;
     }
 
@@ -499,7 +499,7 @@
         margin: 2em 0 3em 0;
         color: #434a4f;
         background-color: #424A4F;
-        background: url("../images/about-placeholder6.jpg") center right no-repeat;
+        background: url("../images/middle-break-placeholder.jpg") center right no-repeat;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -729,7 +729,7 @@
     }
 
     .page-blogindexpage .logo {
-        background-image: url("../images/the-school-of-choimirai-logo-red-v3.png");
+        background-image: url("../images/choimirai-logo-tree-and-name.png");
     }
 
     .page-blogindexpage li img {
@@ -847,7 +847,7 @@
     }
 
     .page-workpage .logo {
-        background-image: url("../images/the-school-of-choimirai-logo-red-v3.png");
+        background-image: url("../images/choimirai-logo-tree-and-name.png");
     }
 
     .page-workpage .intro h1 {
@@ -1072,7 +1072,7 @@
     }
 
     .page-jobindexpage .logo {
-        background: url("../images/the-school-of-choimirai-logo-red-v3.png") center left no-repeat;
+        background: url("../images/choimirai-logo-tree-and-name.png") center left no-repeat;
         background-size: auto 3em;
     }
 
@@ -1355,7 +1355,7 @@
     }
 
     .page-tshirtpage .logo {
-        background: url("../images/the-school-of-choimirai-logo-red-v3.png") center left no-repeat;
+        background: url("../images/choimirai-logo-tree-and-name.png") center left no-repeat;
         background-size: auto 3em ;
     }
 

@@ -11,8 +11,8 @@
         <meta name="description" content="{% if self.search_description %}{{ self.search_description }}{% endif %}">
 
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@torchbox">
-        <meta name="twitter:creator" content="@torchbox">
+        <meta name="twitter:site" content="@thechoimirai">
+        <meta name="twitter:creator" content="@thechoimirai">
         <meta name="twitter:title" content="{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %} | Choimirai">
         <meta name="twitter:description" content="{% if self.intro %}{{ self.intro|striptags }}{% elif self.search_description %}{{ self.search_description }}{% endif %}">
         <meta name="twitter:image:src" content="http://{{ request.site.hostname }}{% if self.feed_image %}{% image self.feed_image width-400 as img %}{{ img.url }}{% else %}{% static "torchbox/images/about-placeholder6.jpg" %}{% endif %}" />
@@ -88,9 +88,12 @@
                 <div class="contact container listing">
                     <h2>Say hello</h2>
                     <ul class="footerbleed">
-                        <li><a href="mailto:{% if self|in_play or play_404 %}play{% else %}hello{% endif %}@choimirai.com"><i class="icon-mail"></i><span>{% if self|in_play or play_404 %}play{% else %}hello{% endif %}@choimirai.com</span></a></li>
-                        <li><a href="tel:0452285330"><i class="icon-phone"></i><span>045 228 5330</span></a></li>
-                        <li><a href="https://twitter.com/{% if self|in_play or play_404 %}playsays{% else %}choimirai{% endif %}"><i class="icon-twitter"></i><span>{% if self|in_play or play_404 %}@PlaySays{% else %}@choimirai{% endif %}</span></a></li>
+{#                        <li><a href="mailto:{% if self|in_play or play_404 %}play{% else %}hello{% endif %}@choimirai.com"><i class="icon-mail"></i><span>{% if self|in_play or play_404 %}play{% else %}hello{% endif %}@choimirai.com</span></a></li>#}
+{#                        <li><a href="tel:0452285330"><i class="icon-phone"></i><span>045 228 5330</span></a></li>#}
+{#                        <li><a href="https://twitter.com/{% if self|in_play or play_404 %}playsays{% else %}thechoimirai{% endif %}"><i class="icon-twitter"></i><span>{% if self|in_play or play_404 %}@PlaySays{% else %}@thechoimirai{% endif %}</span></a></li>#}
+{#                        <li><a href="https://facebook.com/{% if self|in_play or play_404 %}playsays{% else %}choimirai{% endif %}"><i class="icon-facebook"></i><span>{% if self|in_play or play_404 %}@PlaySays{% else %}Choimirai{% endif %}</span></a></li>#}
+                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                        <div class="addthis_custom_follow"></div>
                     </ul>
                     {% if not self|in_play or play_404 %}
                         <span class="newsletter-cta"><strong>Get the best of the web</strong> in your inbox every Friday</span>
